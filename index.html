@@ -50,7 +50,7 @@
                 </div>
                 <div class="bg-white/80 p-6 rounded-2xl border border-[#d6cfc5] shadow-lg backdrop-blur-sm">
                     <div class="flex items-center space-x-4 mb-6">
-                        <div class="w-16 h-16 bg-[#8c6d53] text-white rounded-full flex items-center justify-center text-xl font-bold shadow-sm">EPN</div>
+                        <div class="w-16 h-16 bg-[#8c6d53] text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-sm">EPN</div>
                         <div>
                             <h3 class="font-bold text-xl text-[#2c241d]">Dr. Eria Paul Njuki</h3>
                             <p class="text-[#736453] text-sm">Lead Clinician & Special Educator</p>
@@ -157,10 +157,22 @@
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e3ded5] flex flex-col justify-center space-y-6">
                     <h3 class="text-xl font-bold text-[#2c241d]">Route Guidance Summary</h3>
                     <ul class="space-y-4 text-sm text-[#615343]">
-                        <li class="flex items-start"><i class="fa-solid fa-route text-[#8c6d53] mt-1 mr-3"><span>Start from Kampala / Hoima Road.</span></i></li>
-                        <li class="flex items-start"><i class="fa-solid fa-route text-[#8c6d53] mt-1 mr-3"><span>Connect past Kakiri Trading Centre and Kakiri Taxi Park onto Masuuliita Road.</span></i></li>
-                        <li class="flex items-start"><i class="fa-solid fa-route text-[#8c6d53] mt-1 mr-3"><span>Drive past Busujja Trading Centre for roughly 3.5 km, past a small swamp to the Mukono Integrated Schools grey gate signage.</span></i></li>
-                        <li class="flex items-start"><i class="fa-solid fa-route text-[#8c6d53] mt-1 mr-3"><span>Look for the distinctive black building near the main gate.</span></i></li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-route text-[#8c6d53] mt-1 mr-3 shrink-0"></i>
+                            <span>Start from Kampala / Hoima Road.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-route text-[#8c6d53] mt-1 mr-3 shrink-0"></i>
+                            <span>Connect past Kakiri Trading Centre and Kakiri Taxi Park onto Masuuliita Road.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-route text-[#8c6d53] mt-1 mr-3 shrink-0"></i>
+                            <span>Drive past Busujja Trading Centre for roughly 3.5 km, past a small swamp to the Mukono Integrated Schools grey gate signage.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-route text-[#8c6d53] mt-1 mr-3 shrink-0"></i>
+                            <span>Look for the distinctive black building near the main gate.</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -261,14 +273,4 @@
                 "Child's Name: " + childName + "\n" +
                 "Parent/Guardian: " + parentName + "\n" +
                 "Email: " + email + "\n" +
-                "Desired Appointment: " + apptTime + "\n" +
-                "Additional Notes: " + notes
-            );
-
-            // Automatically trigger mail client to send directly to destination email address
-            window.location.href = `mailto:njuki@realname.com?subject=${subject}&body=${body}`;
-        }
-    </script>
-</body>
-  </html>
-  
+                "Desired App
