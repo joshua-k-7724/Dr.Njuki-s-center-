@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div>
-                    <button type="button" onclick="openRealBooking()" class="bg-[#8c6d53] hover:bg-[#785b42] text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition shadow-sm cursor-pointer">Book Assessment</button>
+                    <a href="#booking" class="inline-block bg-[#8c6d53] hover:bg-[#785b42] text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition shadow-sm cursor-pointer text-center">Book Assessment</a>
                 </div>
             </div>
         </div>
@@ -44,8 +44,8 @@
                         Providing specialized education, diagnostic screening, and remedial support for individuals with learning differences, including autism, dyslexia, and intellectual disabilities.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <button type="button" onclick="openRealBooking()" class="bg-[#8c6d53] hover:bg-[#785b42] text-white text-center font-semibold px-6 py-3 rounded-xl transition shadow-md cursor-pointer">Schedule Assessment</button>
-                        <button type="button" onclick="openDirections()" class="bg-white/85 hover:bg-white text-[#3d332a] text-center font-semibold px-6 py-3 rounded-xl transition border border-[#d6cfc5] cursor-pointer">Get Directions</button>
+                        <a href="#booking" class="bg-[#8c6d53] hover:bg-[#785b42] text-white text-center font-semibold px-6 py-3 rounded-xl transition shadow-md cursor-pointer">Schedule Assessment</a>
+                        <a href="#directions" class="bg-white/85 hover:bg-white text-[#3d332a] text-center font-semibold px-6 py-3 rounded-xl transition border border-[#d6cfc5] cursor-pointer">Get Directions</a>
                     </div>
                 </div>
                 <div class="bg-white/80 p-6 rounded-2xl border border-[#d6cfc5] shadow-lg backdrop-blur-sm">
@@ -235,32 +235,14 @@
                 <p class="text-xs text-[#736453] mt-1">Kyabalamba, Wakiso District & Kyambogo, Uganda</p>
             </div>
             <div class="flex space-x-4">
-                <button type="button" onclick="openDirections()" class="text-xs font-semibold text-[#8c6d53] hover:underline cursor-pointer">Get Directions</button>
-                <button type="button" onclick="openRealBooking()" class="text-xs font-semibold text-[#8c6d53] hover:underline cursor-pointer">Book Assessment</button>
+                <a href="#directions" class="text-xs font-semibold text-[#8c6d53] hover:underline cursor-pointer">Get Directions</a>
+                <a href="#booking" class="text-xs font-semibold text-[#8c6d53] hover:underline cursor-pointer">Book Assessment</a>
             </div>
         </div>
     </footer>
 
-    <!-- Script to Handle Smooth Interactive Section Scroll and Booking Dispatch -->
+    <!-- Script to Handle Form Submission to njuki1965@gmail.com -->
     <script>
-        function openRealBooking() {
-            const bookingSection = document.getElementById('booking');
-            if (bookingSection) {
-                bookingSection.scrollIntoView({ behavior: 'smooth' });
-                setTimeout(() => {
-                    const childInput = document.getElementById('childName');
-                    if (childInput) childInput.focus();
-                }, 500);
-            }
-        }
-
-        function openDirections() {
-            const directionsSection = document.getElementById('directions');
-            if (directionsSection) {
-                directionsSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
         function handleBooking(event) {
             event.preventDefault();
 
@@ -272,4 +254,19 @@
             const notes = document.getElementById('notes').value;
 
             // Construct mailto link directly targeting njuki1965@gmail.com
-            const recipientEmail = "njuki1965@gmail.
+            const recipientEmail = "njuki1965@gmail.com";
+            const subject = encodeURIComponent("New Assessment Booking Request - Dr. Eria Paul Njuki's Centre");
+            const body = encodeURIComponent(
+                `New Assessment Booking Details:\n\n` +
+                `Child's Full Name: ${childName}\n` +
+                `Parent / Guardian Name: ${parentName}\n` +
+                `Parent Email: ${email}\n` +
+                `Desired Date & Time: ${apptTime}\n` +
+                `Additional Notes: ${notes}\n`
+            );
+
+            window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
+        }
+    </script>
+</body>
+</html>
