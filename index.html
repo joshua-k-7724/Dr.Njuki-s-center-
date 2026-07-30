@@ -8,24 +8,27 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-serif { font-family: 'Lora', serif; }
     </style>
 </head>
-<body class="bg-[#f9f8f6] text-[#3d332a] antialiased flex flex-col min-h-screen">
+<body class="bg-[#fcfbf9] text-[#2b2621] antialiased flex flex-col min-h-screen">
 
-    <!-- Header & Navigation with Clean Minimalist Top Bar -->
-    <header class="bg-[#f2efe9] text-[#3d332a] sticky top-0 z-50 shadow-sm border-b border-[#e3ded5]">
+    <!-- Header & Navigation with Academic/Professional Theme -->
+    <header class="bg-[#f4f1eb] text-[#2b2621] sticky top-0 z-50 shadow-sm border-b border-[#e5dfd5]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center space-x-3 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
                     <div>
-                        <span class="block font-bold text-lg leading-tight text-[#3d332a]">Dr. Eria Paul Njuki's Centre</span>
-                        <span class="text-xs text-[#736453]">For Learning Differences - Uganda</span>
+                        <span class="block font-serif font-bold text-lg tracking-tight text-[#1a1714]">Dr. Eria Paul Njuki's Centre</span>
+                        <span class="text-xs font-medium text-[#6e6358] tracking-wider uppercase">For Learning Differences • Uganda</span>
                     </div>
                 </div>
-                <div>
-                    <a href="#booking" class="inline-block bg-[#8c6d53] hover:bg-[#785b42] text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition shadow-sm cursor-pointer text-center">Book Assessment at Page Bottom</a>
+                <div class="hidden sm:block">
+                    <span class="text-xs font-medium text-[#6e6358] italic bg-[#e9e3d9] px-3 py-1.5 rounded-md border border-[#dfd7cc]">
+                        <i class="fa-solid fa-arrow-down mr-1"></i> Scroll down to access booking
+                    </span>
                 </div>
             </div>
         </div>
@@ -35,27 +38,24 @@
     <main class="flex-grow space-y-24 pb-20">
 
         <!-- ABOUT / HERO SECTION -->
-        <section id="about" class="bg-gradient-to-br from-[#f2efe9] via-[#e9e4dc] to-[#ded6cc] text-[#3d332a] py-24">
+        <section id="about" class="bg-gradient-to-br from-[#f4f1eb] via-[#ede7df] to-[#e4ded5] text-[#2b2621] py-24 border-b border-[#e5dfd5]">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <span class="bg-[#8c6d53]/15 text-[#615343] text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider border border-[#8c6d53]/30">Specialized Care & Support</span>
-                    <h1 class="text-4xl sm:text-5xl font-extrabold mt-4 mb-6 leading-tight text-[#2c241d]">Unlocking the Potential of Every Unique Learner</h1>
-                    <p class="text-[#615343] text-lg mb-8 leading-relaxed">
+                    <span class="bg-[#705642]/10 text-[#594333] text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest border border-[#705642]/20">Academic & Clinical Excellence</span>
+                    <h1 class="text-4xl sm:text-5xl font-serif font-bold mt-4 mb-6 leading-tight text-[#1a1714]">Unlocking the Potential of Every Unique Learner</h1>
+                    <p class="text-[#594333] text-lg mb-8 leading-relaxed font-normal">
                         Providing specialized education, diagnostic screening, and remedial support for individuals with learning differences, including autism, dyslexia, and intellectual disabilities.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#directions" class="bg-white/85 hover:bg-white text-[#3d332a] text-center font-semibold px-6 py-3 rounded-xl transition border border-[#d6cfc5] cursor-pointer">Get Directions</a>
-                    </div>
                 </div>
-                <div class="bg-white/80 p-6 rounded-2xl border border-[#d6cfc5] shadow-lg backdrop-blur-sm">
+                <div class="bg-white/90 p-8 rounded-2xl border border-[#ded5cb] shadow-md backdrop-blur-sm">
                     <div class="flex items-center space-x-4 mb-6">
-                        <div class="w-16 h-16 bg-[#8c6d53] text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-sm">EPN</div>
+                        <div class="w-16 h-16 bg-[#594333] text-[#f4f1eb] rounded-xl flex items-center justify-center text-xl font-serif font-bold shadow-sm">EPN</div>
                         <div>
-                            <h3 class="font-bold text-xl text-[#2c241d]">Dr. Eria Paul Njuki</h3>
-                            <p class="text-[#736453] text-sm">Lead Clinician & Special Educator</p>
+                            <h3 class="font-serif font-bold text-xl text-[#1a1714]">Dr. Eria Paul Njuki</h3>
+                            <p class="text-[#6e6358] text-xs font-medium tracking-wider uppercase">Lead Clinician & Special Educator</p>
                         </div>
                     </div>
-                    <p class="text-sm text-[#615343] leading-relaxed">
+                    <p class="text-sm text-[#594333] leading-relaxed">
                         Dedicated to comprehensive cognitive evaluations, structured educational planning, and practical therapeutic support pathways tailored to each individual learner.
                     </p>
                 </div>
@@ -65,64 +65,64 @@
         <!-- SERVICES & FEES -->
         <section id="services" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-[#8c6d53] text-xs font-semibold tracking-wider uppercase bg-[#f2efe9] px-3 py-1 rounded-full border border-[#e3ded5]">Overview</span>
-                <h2 class="text-3xl font-bold text-[#2c241d] mt-3 mb-4">Services & Pricing</h2>
-                <p class="text-[#615343]">Comprehensive diagnostic screening and structured evaluation tailored to individual cognitive and educational profiles.</p>
+                <span class="text-[#594333] text-xs font-bold tracking-widest uppercase bg-[#f4f1eb] px-3 py-1 rounded-full border border-[#e5dfd5]">Overview</span>
+                <h2 class="text-3xl font-serif font-bold text-[#1a1714] mt-3 mb-4">Services & Pricing</h2>
+                <p class="text-[#594333]">Comprehensive diagnostic screening and structured evaluation tailored to individual cognitive and educational profiles.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e3ded5]">
-                    <div class="w-12 h-12 bg-[#f2efe9] text-[#8c6d53] rounded-xl flex items-center justify-center text-xl mb-6 border border-[#e3ded5]">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e5dfd5]">
+                    <div class="w-12 h-12 bg-[#f4f1eb] text-[#594333] rounded-xl flex items-center justify-center text-xl mb-6 border border-[#e5dfd5]">
                         <i class="fa-solid fa-handshake"></i>
                     </div>
-                    <h3 class="font-bold text-xl text-[#2c241d] mb-2">Specialist Consultation</h3>
-                    <p class="text-[#615343] text-sm leading-relaxed">In-depth discussion with Dr. Eria Paul Njuki to evaluate behavioral history, developmental milestones, and learning challenges.</p>
+                    <h3 class="font-serif font-bold text-xl text-[#1a1714] mb-2">Specialist Consultation</h3>
+                    <p class="text-[#594333] text-sm leading-relaxed">In-depth discussion with Dr. Eria Paul Njuki to evaluate behavioral history, developmental milestones, and learning challenges.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e3ded5]">
-                    <div class="w-12 h-12 bg-[#f2efe9] text-[#8c6d53] rounded-xl flex items-center justify-center text-xl mb-6 border border-[#e3ded5]">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e5dfd5]">
+                    <div class="w-12 h-12 bg-[#f4f1eb] text-[#594333] rounded-xl flex items-center justify-center text-xl mb-6 border border-[#e5dfd5]">
                         <i class="fa-solid fa-flask"></i>
                     </div>
-                    <h3 class="font-bold text-xl text-[#2c241d] mb-2">Diagnostic Testing</h3>
-                    <p class="text-[#615343] text-sm leading-relaxed">Targeted screenings for dyslexia, autism spectrum traits, and cognitive developmental delays.</p>
+                    <h3 class="font-serif font-bold text-xl text-[#1a1714] mb-2">Diagnostic Testing</h3>
+                    <p class="text-[#594333] text-sm leading-relaxed">Targeted screenings for dyslexia, autism spectrum traits, and cognitive developmental delays.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e3ded5]">
-                    <div class="w-12 h-12 bg-[#f2efe9] text-[#8c6d53] rounded-xl flex items-center justify-center text-xl mb-6 border border-[#e3ded5]">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e5dfd5]">
+                    <div class="w-12 h-12 bg-[#f4f1eb] text-[#594333] rounded-xl flex items-center justify-center text-xl mb-6 border border-[#e5dfd5]">
                         <i class="fa-solid fa-file-lines"></i>
                     </div>
-                    <h3 class="font-bold text-xl text-[#2c241d] mb-2">Comprehensive Report</h3>
-                    <p class="text-[#615343] text-sm leading-relaxed">A detailed diagnostic report providing actionable remedial educational pathways and accommodation recommendations.</p>
+                    <h3 class="font-serif font-bold text-xl text-[#1a1714] mb-2">Comprehensive Report</h3>
+                    <p class="text-[#594333] text-sm leading-relaxed">A detailed diagnostic report providing actionable remedial educational pathways and accommodation recommendations.</p>
                 </div>
             </div>
-            <div class="mt-10 bg-[#f2efe9] text-[#3d332a] p-8 rounded-2xl text-center max-w-xl mx-auto shadow-sm border border-[#e3ded5]">
-                <span class="text-[#8c6d53] font-semibold text-lg block">All-Inclusive Assessment Package</span>
-                <span class="text-3xl font-extrabold text-[#2c241d] mt-1 block">UGX 500,000</span>
-                <span class="text-xs text-[#615343] mt-2 block">Covers full consultation, testing suite, and comprehensive assessment report.</span>
+            <div class="mt-10 bg-[#f4f1eb] text-[#2b2621] p-8 rounded-2xl text-center max-w-xl mx-auto shadow-sm border border-[#e5dfd5]">
+                <span class="text-[#594333] font-bold text-sm tracking-widest uppercase block">All-Inclusive Assessment Package</span>
+                <span class="text-3xl font-serif font-extrabold text-[#1a1714] mt-2 block">UGX 500,000</span>
+                <span class="text-xs text-[#6e6358] mt-2 block">Covers full consultation, testing suite, and comprehensive assessment report.</span>
             </div>
         </section>
 
         <!-- REQUIREMENTS -->
         <section id="requirements" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-[#8c6d53] text-xs font-semibold tracking-wider uppercase bg-[#f2efe9] px-3 py-1 rounded-full border border-[#e3ded5]">Overview</span>
-                <h2 class="text-3xl font-bold text-[#2c241d] mt-3 mb-4">Requirements</h2>
-                <p class="text-[#615343]">Please prepare the necessary items prior to your scheduled morning appointment.</p>
+                <span class="text-[#594333] text-xs font-bold tracking-widest uppercase bg-[#f4f1eb] px-3 py-1 rounded-full border border-[#e5dfd5]">Overview</span>
+                <h2 class="text-3xl font-serif font-bold text-[#1a1714] mt-3 mb-4">Requirements</h2>
+                <p class="text-[#594333]">Please prepare the necessary items prior to your scheduled morning appointment.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e3ded5]">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e5dfd5]">
                     <div class="flex items-center space-x-3 mb-4">
-                        <div class="bg-[#f2efe9] text-[#8c6d53] p-2 rounded-lg"><i class="fa-solid fa-check"></i></div>
-                        <h3 class="font-bold text-lg text-[#2c241d]">For School-Going Students</h3>
+                        <div class="bg-[#f4f1eb] text-[#594333] p-2 rounded-lg"><i class="fa-solid fa-check"></i></div>
+                        <h3 class="font-serif font-bold text-lg text-[#1a1714]">For School-Going Students</h3>
                     </div>
-                    <ul class="space-y-3 text-[#615343] text-sm">
-                        <li class="flex items-start"><i class="fa-solid fa-circle-dot text-[#8c6d53] mt-1 mr-2 text-xs"></i><span><strong>Child's Written Samples:</strong> Used exercise books and past papers (at least one sample per subject).</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-circle-dot text-[#8c6d53] mt-1 mr-2 text-xs"></i><span><strong>School Reports:</strong> Copies of the most recent school-based assessments or term/year-end reports.</span></li>
+                    <ul class="space-y-3 text-[#594333] text-sm">
+                        <li class="flex items-start"><i class="fa-solid fa-circle-dot text-[#594333] mt-1 mr-2 text-xs"></i><span><strong>Child's Written Samples:</strong> Used exercise books and past papers (at least one sample per subject).</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-dot text-[#594333] mt-1 mr-2 text-xs"></i><span><strong>School Reports:</strong> Copies of the most recent school-based assessments or term/year-end reports.</span></li>
                     </ul>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e3ded5]">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e5dfd5]">
                     <div class="flex items-center space-x-3 mb-4">
-                        <div class="bg-[#f2efe9] text-[#8c6d53] p-2 rounded-lg"><i class="fa-solid fa-triangle-exclamation"></i></div>
-                        <h3 class="font-bold text-lg text-[#2c241d]">If Not Currently in School</h3>
+                        <div class="bg-[#f4f1eb] text-[#594333] p-2 rounded-lg"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                        <h3 class="font-serif font-bold text-lg text-[#1a1714]">If Not Currently in School</h3>
                     </div>
-                    <p class="text-[#615343] text-sm leading-relaxed">
+                    <p class="text-[#594333] text-sm leading-relaxed">
                         If the student is currently not enrolled in an institutional school program, <strong>these document requirements are waived</strong>. You may proceed directly to booking without school records.
                     </p>
                 </div>
@@ -132,44 +132,44 @@
         <!-- DIRECTIONS & LOCATION -->
         <section id="directions" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-[#8c6d53] text-xs font-semibold tracking-wider uppercase bg-[#f2efe9] px-3 py-1 rounded-full border border-[#e3ded5]">Overview</span>
-                <h2 class="text-3xl font-bold text-[#2c241d] mt-3 mb-4">Directions & Location</h2>
-                <p class="text-[#615343]">Find our facilities or get direct live navigation guidance.</p>
+                <span class="text-[#594333] text-xs font-bold tracking-widest uppercase bg-[#f4f1eb] px-3 py-1 rounded-full border border-[#e5dfd5]">Overview</span>
+                <h2 class="text-3xl font-serif font-bold text-[#1a1714] mt-3 mb-4">Directions & Location</h2>
+                <p class="text-[#594333]">Find our facilities or get direct live navigation guidance.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e3ded5] space-y-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e5dfd5] space-y-6">
                     <div>
-                        <h3 class="font-bold text-lg text-[#2c241d] mb-1">Primary School & Operations</h3>
-                        <p class="text-[#615343] text-sm">Kyabalamba, Wakiso District (Near Mukono Integrated Schools via the Kakiri / Masuuliita Road route).</p>
+                        <h3 class="font-serif font-bold text-lg text-[#1a1714] mb-1">Primary School & Operations</h3>
+                        <p class="text-[#594333] text-sm">Kyabalamba, Wakiso District (Near Mukono Integrated Schools via the Kakiri / Masuuliita Road route).</p>
                     </div>
                     <div>
-                        <h3 class="font-bold text-lg text-[#2c241d] mb-1">Diagnostic & Therapeutic Services</h3>
-                        <p class="text-[#615343] text-sm">Offices located at <strong>Kyambogo & Wakiso</strong>. The Wakiso office is housed in a <strong>black building</strong> located just a few metres away from the main school gate (grey gate) at the Mukono Integrated Schools site.</p>
+                        <h3 class="font-serif font-bold text-lg text-[#1a1714] mb-1">Diagnostic & Therapeutic Services</h3>
+                        <p class="text-[#594333] text-sm">Offices located at <strong>Kyambogo & Wakiso</strong>. The Wakiso office is housed in a <strong>black building</strong> located just a few metres away from the main school gate (grey gate) at the Mukono Integrated Schools site.</p>
                     </div>
-                    <div class="pt-4 border-t border-[#f2efe9]">
-                        <a href="https://www.google.com/maps/search/?api=1&query=0%C2%B027'49.9%22N+32%C2%B023'46.3%22E" target="_blank" class="inline-flex items-center space-x-2 bg-[#8c6d53] hover:bg-[#785b42] text-white px-5 py-3 rounded-lg text-sm font-semibold transition shadow-sm">
+                    <div class="pt-4 border-t border-[#f4f1eb]">
+                        <a href="https://www.google.com/maps/search/?api=1&query=0%C2%B027'49.9%22N+32%C2%B023'46.3%22E" target="_blank" class="inline-flex items-center space-x-2 bg-[#594333] hover:bg-[#433226] text-white px-5 py-3 rounded-lg text-sm font-semibold transition shadow-sm">
                             <i class="fa-solid fa-map-location-dot"></i>
                             <span>Open Live Google Maps Directions</span>
                         </a>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e3ded5] flex flex-col justify-center space-y-6">
-                    <h3 class="text-xl font-bold text-[#2c241d]">Route Guidance Summary</h3>
-                    <ul class="space-y-4 text-sm text-[#615343]">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e5dfd5] flex flex-col justify-center space-y-6">
+                    <h3 class="text-xl font-serif font-bold text-[#1a1714]">Route Guidance Summary</h3>
+                    <ul class="space-y-4 text-sm text-[#594333]">
                         <li class="flex items-start">
-                            <i class="fa-solid fa-route text-[#8c6d53] mt-1 mr-3 shrink-0"></i>
+                            <i class="fa-solid fa-route text-[#594333] mt-1 mr-3 shrink-0"></i>
                             <span>Start from Kampala / Hoima Road.</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fa-solid fa-route text-[#8c6d53] mt-1 mr-3 shrink-0"></i>
+                            <i class="fa-solid fa-route text-[#594333] mt-1 mr-3 shrink-0"></i>
                             <span>Connect past Kakiri Trading Centre and Kakiri Taxi Park onto Masuuliita Road.</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fa-solid fa-route text-[#8c6d53] mt-1 mr-3 shrink-0"></i>
+                            <i class="fa-solid fa-route text-[#594333] mt-1 mr-3 shrink-0"></i>
                             <span>Drive past Busujja Trading Centre for roughly 3.5 km, past a small swamp to the Mukono Integrated Schools grey gate signage.</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fa-solid fa-route text-[#8c6d53] mt-1 mr-3 shrink-0"></i>
+                            <i class="fa-solid fa-route text-[#594333] mt-1 mr-3 shrink-0"></i>
                             <span>Look for the distinctive black building near the main gate.</span>
                         </li>
                     </ul>
@@ -180,43 +180,43 @@
         <!-- BOOKING -->
         <section id="booking" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-[#8c6d53] text-xs font-semibold tracking-wider uppercase bg-[#f2efe9] px-3 py-1 rounded-full border border-[#e3ded5]">Overview</span>
-                <h2 class="text-3xl font-bold text-[#2c241d] mt-3 mb-2">Booking & Appointment</h2>
-                <p class="text-[#615343] text-sm">Please confirm requests at least 24 hours in advance. Morning testing hours (8:00 AM – 12:00 PM) are strongly recommended for optimal assessment results.</p>
+                <span class="text-[#594333] text-xs font-bold tracking-widest uppercase bg-[#f4f1eb] px-3 py-1 rounded-full border border-[#e5dfd5]">Overview</span>
+                <h2 class="text-3xl font-serif font-bold text-[#1a1714] mt-3 mb-2">Booking & Appointment</h2>
+                <p class="text-[#594333] text-sm">Please confirm requests at least 24 hours in advance. Morning testing hours (8:00 AM – 12:00 PM) are strongly recommended for optimal assessment results.</p>
             </div>
-            <div class="bg-white rounded-2xl shadow-xl border border-[#e3ded5] overflow-hidden">
-                <div class="bg-[#f2efe9] text-[#3d332a] p-6 border-b border-[#e3ded5]">
-                    <h3 class="text-xl font-bold text-[#2c241d]">Schedule an Evaluation</h3>
-                    <p class="text-[#615343] text-xs mt-1">Fill out the details below to dispatch your booking request securely.</p>
+            <div class="bg-white rounded-2xl shadow-xl border border-[#e5dfd5] overflow-hidden">
+                <div class="bg-[#f4f1eb] text-[#2b2621] p-6 border-b border-[#e5dfd5]">
+                    <h3 class="text-xl font-serif font-bold text-[#1a1714]">Schedule an Evaluation</h3>
+                    <p class="text-[#6e6358] text-xs mt-1">Fill out the details below to dispatch your booking request securely.</p>
                 </div>
                 <form id="bookingForm" onsubmit="handleBooking(event)" class="p-8 space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-sm font-medium text-[#2c241d] mb-2">Child's Full Name</label>
-                            <input type="text" id="childName" required class="w-full px-4 py-3 border border-[#e3ded5] rounded-lg focus:ring-2 focus:ring-[#8c6d53] focus:border-[#8c6d53] text-sm bg-[#faf9f6]" placeholder="e.g. John Doe">
+                            <label class="block text-sm font-medium text-[#1a1714] mb-2">Child's Full Name</label>
+                            <input type="text" id="childName" required class="w-full px-4 py-3 border border-[#e5dfd5] rounded-lg focus:ring-2 focus:ring-[#594333] focus:border-[#594333] text-sm bg-[#faf8f5]" placeholder="e.g. John Doe">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-[#2c241d] mb-2">Parent / Guardian Name</label>
-                            <input type="text" id="parentName" required class="w-full px-4 py-3 border border-[#e3ded5] rounded-lg focus:ring-2 focus:ring-[#8c6d53] focus:border-[#8c6d53] text-sm bg-[#faf9f6]" placeholder="e.g. Mary Doe">
+                            <label class="block text-sm font-medium text-[#1a1714] mb-2">Parent / Guardian Name</label>
+                            <input type="text" id="parentName" required class="w-full px-4 py-3 border border-[#e5dfd5] rounded-lg focus:ring-2 focus:ring-[#594333] focus:border-[#594333] text-sm bg-[#faf8f5]" placeholder="e.g. Mary Doe">
                         </div>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-sm font-medium text-[#2c241d] mb-2">Email Address</label>
-                            <input type="email" id="emailAddr" required class="w-full px-4 py-3 border border-[#e3ded5] rounded-lg focus:ring-2 focus:ring-[#8c6d53] focus:border-[#8c6d53] text-sm bg-[#faf9f6]" placeholder="parent@example.com">
+                            <label class="block text-sm font-medium text-[#1a1714] mb-2">Email Address</label>
+                            <input type="email" id="emailAddr" required class="w-full px-4 py-3 border border-[#e5dfd5] rounded-lg focus:ring-2 focus:ring-[#594333] focus:border-[#594333] text-sm bg-[#faf8f5]" placeholder="parent@example.com">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-[#2c241d] mb-2">Desired Appointment Date & Time</label>
-                            <input type="datetime-local" id="apptTime" required class="w-full px-4 py-3 border border-[#e3ded5] rounded-lg focus:ring-2 focus:ring-[#8c6d53] focus:border-[#8c6d53] text-sm bg-[#faf9f6]">
-                            <span class="text-xs text-[#615343] mt-1 block">Best window: 8:00 AM – 12:00 PM (Confirm 24 hours prior)</span>
+                            <label class="block text-sm font-medium text-[#1a1714] mb-2">Desired Appointment Date & Time</label>
+                            <input type="datetime-local" id="apptTime" required class="w-full px-4 py-3 border border-[#e5dfd5] rounded-lg focus:ring-2 focus:ring-[#594333] focus:border-[#594333] text-sm bg-[#faf8f5]">
+                            <span class="text-xs text-[#6e6358] mt-1 block">Best window: 8:00 AM – 12:00 PM (Confirm 24 hours prior)</span>
                         </div>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-[#2c241d] mb-2">Additional Notes / Child History</label>
-                        <textarea id="notes" rows="4" class="w-full px-4 py-3 border border-[#e3ded5] rounded-lg focus:ring-2 focus:ring-[#8c6d53] focus:border-[#8c6d53] text-sm bg-[#faf9f6]" placeholder="Mention specific learning challenges, school status, etc."></textarea>
+                        <label class="block text-sm font-medium text-[#1a1714] mb-2">Additional Notes / Child History</label>
+                        <textarea id="notes" rows="4" class="w-full px-4 py-3 border border-[#e5dfd5] rounded-lg focus:ring-2 focus:ring-[#594333] focus:border-[#594333] text-sm bg-[#faf8f5]" placeholder="Mention specific learning challenges, school status, etc."></textarea>
                     </div>
                     <div>
-                        <button type="submit" class="w-full bg-[#8c6d53] hover:bg-[#785b42] text-white font-semibold py-3 px-6 rounded-lg transition shadow-md cursor-pointer">
+                        <button type="submit" class="w-full bg-[#594333] hover:bg-[#433226] text-white font-semibold py-3 px-6 rounded-lg transition shadow-md cursor-pointer">
                             Submit Booking Request
                         </button>
                     </div>
@@ -227,15 +227,14 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#f2efe9] text-[#615343] py-8 border-t border-[#e3ded5] text-sm mt-auto">
+    <footer class="bg-[#f4f1eb] text-[#594333] py-8 border-t border-[#e5dfd5] text-sm mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <div>
-                <p class="font-bold text-[#2c241d]">Dr. Eria Paul Njuki's Centre for Learning Differences</p>
-                <p class="text-xs text-[#736453] mt-1">Kyabalamba, Wakiso District & Kyambogo, Uganda</p>
+                <p class="font-serif font-bold text-[#1a1714]">Dr. Eria Paul Njuki's Centre for Learning Differences</p>
+                <p class="text-xs text-[#6e6358] mt-1">Kyabalamba, Wakiso District & Kyambogo, Uganda</p>
             </div>
-            <div class="flex space-x-4">
-                <a href="#directions" class="text-xs font-semibold text-[#8c6d53] hover:underline cursor-pointer">Get Directions</a>
-                <a href="#booking" class="text-xs font-semibold text-[#8c6d53] hover:underline cursor-pointer">Book Assessment at Page Bottom</a>
+            <div>
+                <span class="text-xs italic text-[#6e6358]">Academic & Diagnostic Professional Services</span>
             </div>
         </div>
     </footer>
