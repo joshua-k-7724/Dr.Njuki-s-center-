@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Eria Paul Njuki's Centre for Learning Differences - Uganda</title>
+    <title>Dr Eria Paul Njuki's Centre for Learning Differences - Uganda</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -21,14 +21,18 @@
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center space-x-3 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
                     <div>
-                        <span class="block font-serif font-bold text-lg tracking-tight text-[#1a1714]">Dr. Eria Paul Njuki's Centre</span>
+                        <span class="block font-serif font-bold text-lg tracking-tight text-[#1a1714]">Dr Eria Paul Njuki's Centre</span>
                         <span class="text-xs font-medium text-[#6e6358] tracking-wider uppercase">For Learning Differences • Uganda</span>
                     </div>
                 </div>
-                <div class="hidden sm:block">
-                    <span class="text-xs font-medium text-[#6e6358] italic bg-[#e9e3d9] px-3 py-1.5 rounded-md border border-[#dfd7cc]">
-                        <i class="fa-solid fa-arrow-down mr-1"></i> Scroll down to access booking
-                    </span>
+                <div class="hidden sm:flex items-center space-x-4">
+                    <button type="button" onclick="openRealBooking()" class="text-xs font-semibold text-[#594333] hover:text-[#1a1714] transition cursor-pointer">
+                        Scroll to schedule assessment
+                    </button>
+                    <span class="text-[#d0c6b8]">|</span>
+                    <button type="button" onclick="openDirections()" class="text-xs font-semibold text-[#594333] hover:text-[#1a1714] transition cursor-pointer">
+                        Access directions
+                    </button>
                 </div>
             </div>
         </div>
@@ -37,21 +41,25 @@
     <!-- Main Single Page Content Container -->
     <main class="flex-grow space-y-24 pb-20">
 
-        <!-- ABOUT / HERO SECTION (Buttons completely removed) -->
-        <section id="about" class="bg-gradient-to-br from-[#f4f1eb] via-[#ede7df] to-[#e4ded5] text-[#2b2621] py-24 border-b border-[#e5dfd5]">
+        <!-- ABOUT / HERO SECTION -->
+        <section id="about" class="bg-gradient-to-br from-[#f4f1eb] via-[#ede7df] to-[#e4ded5] text-[#2b2621] py-24 border-b border-[#e5dfd5] scroll-mt-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
                     <span class="bg-[#705642]/10 text-[#594333] text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest border border-[#705642]/20">Academic & Clinical Excellence</span>
                     <h1 class="text-4xl sm:text-5xl font-serif font-bold mt-4 mb-6 leading-tight text-[#1a1714]">Unlocking the Potential of Every Unique Learner</h1>
-                    <p class="text-[#594333] text-lg leading-relaxed font-normal">
+                    <p class="text-[#594333] text-lg leading-relaxed font-normal mb-8">
                         Providing specialized education, diagnostic screening, and remedial support for individuals with learning differences, including autism, dyslexia, and intellectual disabilities.
                     </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button type="button" onclick="openRealBooking()" class="bg-[#594333] hover:bg-[#433226] text-white font-semibold px-6 py-3 rounded-xl transition shadow-md cursor-pointer text-center">Schedule Assessment</button>
+                        <button type="button" onclick="openDirections()" class="bg-white/80 hover:bg-white text-[#2b2621] font-semibold px-6 py-3 rounded-xl transition border border-[#ded5cb] cursor-pointer text-center shadow-sm">Get Directions</button>
+                    </div>
                 </div>
                 <div class="bg-white/90 p-8 rounded-2xl border border-[#ded5cb] shadow-md backdrop-blur-sm">
                     <div class="flex items-center space-x-4 mb-6">
                         <div class="w-16 h-16 bg-[#594333] text-[#f4f1eb] rounded-xl flex items-center justify-center text-xl font-serif font-bold shadow-sm">EPN</div>
                         <div>
-                            <h3 class="font-serif font-bold text-xl text-[#1a1714]">Dr. Eria Paul Njuki</h3>
+                            <h3 class="font-serif font-bold text-xl text-[#1a1714]">Dr Eria Paul Njuki</h3>
                             <p class="text-[#6e6358] text-xs font-medium tracking-wider uppercase">Lead Clinician & Special Educator</p>
                         </div>
                     </div>
@@ -63,7 +71,7 @@
         </section>
 
         <!-- SERVICES & FEES -->
-        <section id="services" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        <section id="services" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 scroll-mt-28">
             <div class="text-center max-w-3xl mx-auto mb-12">
                 <span class="text-[#594333] text-xs font-bold tracking-widest uppercase bg-[#f4f1eb] px-3 py-1 rounded-full border border-[#e5dfd5]">Overview</span>
                 <h2 class="text-3xl font-serif font-bold text-[#1a1714] mt-3 mb-4">Services & Pricing</h2>
@@ -75,7 +83,7 @@
                         <i class="fa-solid fa-handshake"></i>
                     </div>
                     <h3 class="font-serif font-bold text-xl text-[#1a1714] mb-2">Specialist Consultation</h3>
-                    <p class="text-[#594333] text-sm leading-relaxed">In-depth discussion with Dr. Eria Paul Njuki to evaluate behavioral history, developmental milestones, and learning challenges.</p>
+                    <p class="text-[#594333] text-sm leading-relaxed">In-depth discussion with Dr Eria Paul Njuki to evaluate behavioral history, developmental milestones, and learning challenges.</p>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e5dfd5]">
                     <div class="w-12 h-12 bg-[#f4f1eb] text-[#594333] rounded-xl flex items-center justify-center text-xl mb-6 border border-[#e5dfd5]">
@@ -100,7 +108,7 @@
         </section>
 
         <!-- REQUIREMENTS -->
-        <section id="requirements" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        <section id="requirements" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 scroll-mt-28">
             <div class="text-center max-w-3xl mx-auto mb-12">
                 <span class="text-[#594333] text-xs font-bold tracking-widest uppercase bg-[#f4f1eb] px-3 py-1 rounded-full border border-[#e5dfd5]">Overview</span>
                 <h2 class="text-3xl font-serif font-bold text-[#1a1714] mt-3 mb-4">Requirements</h2>
@@ -130,7 +138,7 @@
         </section>
 
         <!-- DIRECTIONS & LOCATION -->
-        <section id="directions" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        <section id="directions" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 scroll-mt-28">
             <div class="text-center max-w-3xl mx-auto mb-12">
                 <span class="text-[#594333] text-xs font-bold tracking-widest uppercase bg-[#f4f1eb] px-3 py-1 rounded-full border border-[#e5dfd5]">Overview</span>
                 <h2 class="text-3xl font-serif font-bold text-[#1a1714] mt-3 mb-4">Directions & Location</h2>
@@ -178,7 +186,7 @@
         </section>
 
         <!-- BOOKING -->
-        <section id="booking" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        <section id="booking" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 scroll-mt-28">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="text-[#594333] text-xs font-bold tracking-widest uppercase bg-[#f4f1eb] px-3 py-1 rounded-full border border-[#e5dfd5]">Overview</span>
                 <h2 class="text-3xl font-serif font-bold text-[#1a1714] mt-3 mb-2">Booking & Appointment</h2>
@@ -230,41 +238,23 @@
     <footer class="bg-[#f4f1eb] text-[#594333] py-8 border-t border-[#e5dfd5] text-sm mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <div>
-                <p class="font-serif font-bold text-[#1a1714]">Dr. Eria Paul Njuki's Centre for Learning Differences</p>
+                <p class="font-serif font-bold text-[#1a1714]">Dr Eria Paul Njuki's Centre for Learning Differences</p>
                 <p class="text-xs text-[#6e6358] mt-1">Kyabalamba, Wakiso District & Kyambogo, Uganda</p>
             </div>
-            <div>
-                <span class="text-xs italic text-[#6e6358]">Academic & Diagnostic Professional Services</span>
+            <div class="flex space-x-4">
+                <button type="button" onclick="openDirections()" class="text-xs font-semibold text-[#594333] hover:underline cursor-pointer">Access directions</button>
+                <button type="button" onclick="openRealBooking()" class="text-xs font-semibold text-[#594333] hover:underline cursor-pointer">Schedule assessment</button>
             </div>
         </div>
     </footer>
 
-    <!-- Script to Handle Form Submission to njuki1965@gmail.com -->
+    <!-- Script to Handle Navigation and Form Submission to njuki1965@gmail.com -->
     <script>
-        function handleBooking(event) {
-            event.preventDefault();
-
-            // Gather form data
-            const childName = document.getElementById('childName').value;
-            const parentName = document.getElementById('parentName').value;
-            const email = document.getElementById('emailAddr').value;
-            const apptTime = document.getElementById('apptTime').value;
-            const notes = document.getElementById('notes').value;
-
-            // Construct mailto link directly targeting njuki1965@gmail.com
-            const recipientEmail = "njuki1965@gmail.com";
-            const subject = encodeURIComponent("New Assessment Booking Request - Dr. Eria Paul Njuki's Centre");
-            const body = encodeURIComponent(
-                `New Assessment Booking Details:\n\n` +
-                `Child's Full Name: ${childName}\n` +
-                `Parent / Guardian Name: ${parentName}\n` +
-                `Parent Email: ${email}\n` +
-                `Desired Date & Time: ${apptTime}\n` +
-                `Additional Notes: ${notes}\n`
-            );
-
-            window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
-        }
-    </script>
-</body>
-</html>
+        function openRealBooking() {
+            const bookingSection = document.getElementById('booking');
+            if (bookingSection) {
+                bookingSection.scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => {
+                    const childInput = document.getElementById('childName');
+                    if (childInput) childInput.focus();
+         
